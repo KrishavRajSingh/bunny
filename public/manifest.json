@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Next.js Chrome Extension",
+    "version": "1.0",
+    "description": "A Chrome extension built with Next.js and TypeScript",
+    "permissions": ["activeTab"],
+    "browser_action": {
+      "default_popup": "index.html"
+    },
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+  }

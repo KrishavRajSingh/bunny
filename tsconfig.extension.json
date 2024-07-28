@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "outDir": "out",
+      "rootDir": "src",
+      "jsx": "react",
+      "types": ["chrome", "react"]
+    },
+    "include": ["src/background.ts", "src/content.ts", "src/Popup.tsx"]
+  }
