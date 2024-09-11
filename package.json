@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && tsc -p tsconfig.extension.json",
+    "build": "next build && tsc -p tsconfig.extension.json && mv out/_next out/next",
     "start": "next start",
     "build:extension": "tsc -p tsconfig.extension.json"
   },
